@@ -44,7 +44,9 @@ class ProductController extends Controller
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        return redirect('products');
+        // Hämta id för den produkt vi skapade
+        $id = DB::getPdo()->lastInsertId();
+        return redirect(route('products.show', $id));
     }
 
     /**
