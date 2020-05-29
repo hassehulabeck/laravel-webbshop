@@ -2,6 +2,7 @@
 @section('main')
 @parent
 @foreach($products as $product)
-<p> {{ $product->name }} {{ $product->price }} </p>
+<p>
+    <a href="/products/{{ $product->id }}">{{ $product->name }}</a> {{ $product->price }} </p>
 @endforeach
 @endsection
