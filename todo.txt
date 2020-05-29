@@ -1,0 +1,15 @@
+Resource = CRUD
+
+Controller
+Index   Visa alla
+Create  Visa formulär för att skapa
+Store   Lagra 
+Show    Visa en
+Edit    Visa formulär för att ändra
+Update  Lagra uppdateringar
+Destroy Ta bort en
+
+I routes/web.php kan vi skriva alla dessa, eller sammanfatta dem med
+Route::resource()
+
+I och med att vi kommer att använda en view per resource, så bör vi skapa en view-katalog per Controller.

@@ -1,7 +1,5 @@
 @extends ('main')
 @section('main')
 @parent
-@foreach($products as $product)
-<p> {{ $product->name}} {{ $product->price }}</p>
-@endforeach
+<h3>Välkommen till webbshoppen</h3>
 @endsection
